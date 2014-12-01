@@ -25,7 +25,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'schooldata',
 			'username'  => 'root',
-			'password'  => 'root',
+			'password'  => 'wMNuQiuRzv',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
