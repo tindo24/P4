@@ -40,7 +40,7 @@ return array(
 	|
 	| All database work in Laravel is done through the PHP PDO facilities
 	| so make sure you have the driver for your particular database of
-	| choice installed on your machine before you begin development.
+	| choice installed on your machine before you begin development. forge username blank password
 	|
 	*/
 
@@ -56,8 +56,8 @@ return array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
 			'database'  => 'schooldata',
-			'username'  => 'forge',
-			'password'  => '',
+			'username'  => 'root',
+			'password'  => 'root',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

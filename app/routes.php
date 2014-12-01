@@ -43,12 +43,12 @@ array(
             }
             # Fail
             catch (Exception $e) {
-                return Redirect::to('/register')->with('flash_message', 'Sign up failed; please try again.')->withInput();
+                return View::make('/register')->with('flash_message', 'Sign up failed; please try again.')->withInput();
             }
           # Log the user in
             Auth::login($user);
 
-            return Redirect::to('/layout')->with('flash_message', 'Welcome to chebosi!');
+            return View::make('/layout')->with('flash_message', 'Welcome to chebosi!');
 
         }
 
