@@ -42,16 +42,16 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="/layout">Home</a>
                 </li>
                 <li>
-                    <a href="#">School Facilities</a>
+                    <a href="/facility">School Facilities</a>
                 </li>
                 <li>
-                    <a href="#">Current Staff</a>
+                    <a href="/staff">Current Staff</a>
                 </li>
                 <li>
-                    <a href="#">Alumnni Portal</a>
+                    <a href="/alumni">Alumnni Portal</a>
                 </li>
                 <li>
                     <a href="#">About</a>
@@ -71,27 +71,15 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>Alumni Portal</h1>
+                        <h1>Welcome to Alumni Portal</h1>
                         <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
                         <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                        <p></p>
-                        {{Form::open(array('url'=>'register'))}}
-                         {{Form::label('email','Email Address')}}<br>
-                         {{Form::text('email')}}
-                         <br>
-                        {{Form::label('username','username')}}<br>
-                         {{Form::text('username')}}
-                         <br>
-                         {{Form::label('password','password')}}<br>
-                         {{Form::text('password')}}
-                         <br><br>
-                         {{Form::submit('sign up')}}
+                        <p> Please register below if you want to keep in contact with fellow alumni</p>
+                        <p><a href="{{ URL::to('/regalumni')}}"> Register your alumni info!</a></p>
                         
-                        
-                        
-                        
-                        {{Form::close()}}
+                     
+                   
                     </div>
                 </div>
             </div>

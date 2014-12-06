@@ -38,17 +38,17 @@
                         Links to the School
                     </a>
                 </li>
-                <li>
-                    <a href="#">Home</a>
+               <li>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="#">School Facilities</a>
+                    <a href="/facility">School Facilities</a>
                 </li>
                 <li>
-                    <a href="#">Current Staff</a>
+                    <a href="/staff">Current Staff</a>
                 </li>
                 <li>
-                    <a href="#">Alumnni Portal</a>
+                    <a href="/alumni">Alumnni Portal</a>
                 </li>
                 <li>
                     <a href="#">About</a>
@@ -72,7 +72,7 @@
                         <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
                         <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                        <p>You are logged out. <a href="{{ URL::to('/login')}}"> Log In?</a></p>
+                        <p>You are logged out. <a href="{{ URL::to('/signup')}}"> Log In?</a></p>
                         
                     </div>
                 </div>

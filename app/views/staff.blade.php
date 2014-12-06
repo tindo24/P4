@@ -71,27 +71,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>Log In</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+                        <h1>Staff and Teachers </h1>
+                        <p> Keep track of you forme class mates and whats happening curently in chebosi</p>
                         <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                        <p></p>
-                        <!-- /app/views/login.blade.php -->
-						<h1>Log in</h1>
-
-						{{ Form::open(array('url' => '/login')) }}
-
-    						Email<br>
-    						{{ Form::text('email') }}<br><br>
-
-   							 Password:<br>
-    							{{ Form::password('password') }}<br><br>
-
-    							{{ Form::submit('Submit') }}
-
-								{{ Form::close() }}
-                       
-                        {{Form::close()}}
                     </div>
                 </div>
             </div>
@@ -115,7 +98,6 @@
     });
     </script>
 
-                   
 </body>
 
 </html>

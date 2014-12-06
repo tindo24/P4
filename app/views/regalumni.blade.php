@@ -41,7 +41,7 @@
                         Links to the School
                     </a>
                 </li>
-                <li>
+               <li>
                     <a href="/">Home</a>
                 </li>
                 <li>
@@ -71,27 +71,26 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>Log In</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                        <h1>Alumni Registration</h1>
+                        <p>Please enter information if you want to keep intouch.</p>
+                        <!--<p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>-->
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                         <p></p>
-                        <!-- /app/views/login.blade.php -->
-						<h1>Log in</h1>
+                        {{ Form::open(array('url' => '/regalumni')) }}
 
-						{{ Form::open(array('url' => '/login')) }}
-
-    						Email<br>
-    						{{ Form::text('email') }}<br><br>
-
-   							 Password:<br>
-    							{{ Form::password('password') }}<br><br>
-
-    							{{ Form::submit('Submit') }}
+    							 First Name<br>
+    							{{ Form::text('firstname') }}<br><br>
+    							Last Name<br>
+    							{{ Form::text('lastname') }}<br><br>
+    							Graduation Year<br>
+    							{{ Form::text('graduation_year') }}<br><br>
+    							 Contact Email<br>
+    							{{ Form::text('contact_email') }}<br><br>
+    							
+   						 		{{ Form::submit('Submit') }}
 
 								{{ Form::close() }}
-                       
-                        {{Form::close()}}
+								
                     </div>
                 </div>
             </div>
