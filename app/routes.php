@@ -117,10 +117,26 @@ return View::make('logout');
 Route::get('/alumni', array(
 'before'=>'auth',
 function(){
-
+	
 	return View::make('alumni');	
 }));
 
+Route::post('/alumni', array(
+function(){
+	# Format and Query are passed as Query Strings
+		$format = Input::get('format', 'html');
+		$query  = Input::get('query');
+		$alumnis = Alumni::search($query);
+		# Decide on output method...
+		# Default - HTML
+		if($format == 'html') {
+			return View::make('alumni')
+				->with('alumnis', $alumnis)
+				->with('query', $alumnis);
+		}
+
+	return View::make('alumni');	
+}));
 # register alumni
 
 Route::get('regalumni', function()

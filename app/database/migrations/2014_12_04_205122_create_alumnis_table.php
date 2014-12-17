@@ -18,7 +18,7 @@ class CreateAlumnisTable extends Migration {
     $table->increments('id');
     $table->string('firstname');
 	$table->string('lastname');
-	$table->string('graduation_year');
+	$table->integer('graduation_year');
 	$table->string('contact_email');
     $table->timestamps();
 	});

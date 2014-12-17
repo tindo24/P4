@@ -16,9 +16,29 @@
 
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
+    <style>
+    #content1{
+    margin: 0 auto;
+    width: 94.4%;
+   background-color: #E7DFC9;
+   list-style:none
+
+}
+.Newsfeed{
+	
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+h3{
+	background-color: #E17128;
+	color:white;
+}
+    
+    ></style>
+    
     <!-- slidorion css-->
-   
-     <link rel="stylesheet" href="css/slidorion.css" />
+    <link rel="stylesheet" href="css/slidorion.css" />
      
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -41,8 +61,8 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
-                        Links to the School
+                    <a href="/login">
+                      Login
                     </a>
                 </li>
                 <li>
@@ -75,44 +95,56 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
+                    	<div id="content1">
                         <h1>Welcome To Chebosi High School</h1>
                         <p> Keep track of you forme class mates and whats happening curently in chebosi</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Hide the  Menu</a>
+                      <p>
+                      	
+                      </p>
+                      
+                        <p>
+                        	
+                        	<img src="images/chebosi.jpg" title="Chebosi High School">
+                        	
+                        	<div class="Newsfeed">
+                        	<h3>About Chebosi</h3>
+                        	<p>Chebosi High  school is  situated in Vihiga county along Kakamega Kisumu road. Started in the early 1950s the school continued to narture students that have gone to play a major role in the development of our country and the world at large. Under the leadership if Mr. Indimuli Kahi, we've grown to
+                        		 be a leader in Kenya both academically and in sports, drama, music and other extra curriculum activities.</p>
+                        		
+                        		
+                        	</div>
+                        	<div class="Newsfeed">
+                        	<h3>Enrollment</h3>
+                        	<p>The school is a six streamed school in form one to four, a total of 24 classes. With the Ministry's
+                        		 stipulated enrolment of 45 students per class, the total student population should therefore be 1080</p>
+                        		
+                        	 <p>However the present population is slightly higher at 1198 due to high demand. The school admits children from various religious and ethnic groups after
+                        		 	 an eight-year primary cycle ending with the Kenya Certificate of Primary Education (KCPE) examination.</p>
+                        	<p>Most of the students came from within and around Municipality. The school is a day school with a private boarding
+                        		 wing catering for very few students and there is need for expansion.</p>
+                        		
+                        		
+                        	</div>
+                        	<div class="Newsfeed">
+                        	<h3>Establishment</h3>
+                        	<p>The total establishment is 106.There are 64 teachers and 30 auxiliary staff. 
+                        		Only three of the sixty four teachers stay within the compound. All the teachers are Kenyan Nationals.</p>
+                        		
+                        		
+                        	</div>
+                        
+                        	
+                        </p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
              
-             
+             <p></p><br/>
              <!-- sidorion test ground-->
-      <div id="slidorion" class="slidorion">
-
-		<div class="slider">
-			<div class="slide"><img src="images/boxing.jpg"/></div>
-			<div class="slide"><img src="images/athletics.jpg"/></div>
-			<div class="slide"><img src="images/basketball.jpg"/></div>
-			<div class="slide"><img src="images/athletics.jpg"/></div>
-		</div>
-
-		<div class="accordion">
-			<div class="header">Muhammad Ali</div>
-			<div class="content">
-				<p>Muhammad Ali (born Cassius Marcellus Clay, Jr.) is an American former professional boxer, philanthropist and social activist. Nicknamed "The Greatest", and widely considered the best heavyweight of all-time, Ali was involved in several historic boxing matches.</p>
-				<p>Ali become the first and only three-time lineal World Heavyweight Champion.</p>
-			</div>
-			<div class="header">Usain Bolt</div>
-			<div class="content">
-				<p>Usain Bolt is a Jamaican sprinter widely regarded as the fastest person ever. He is the first man to hold both the 100 and 200 metres world records since automatic time measurements became mandatory in 1977.</p>
-				<p>His achievements have earned him the media nickname "Lightning Bolt", and awards including the IAAF World Athlete of the Year and Track &amp; Field Athlete of the Year</p>
-			</div>
-			<div class="header">Michael Jordan</div>
-			<div class="content">
-				<p>Michael Jeffrey Jordan (MJ), is an American former professional basketball player, entrepreneur, and majority owner and chairman of the Charlotte Bobcats.</p>
-				<p>MJ's individual accolades and accomplishments include five MVP awards, fourteen NBA All-Star Game appearances and many more. He was inducted into the Basketball Hall of Fame in 2009.</p>
-			</div>
-			<div class="header">MT Kenya wildlife pool</div>
-			<div class="content">
-			<p> Enjoy swimming at the peak of mount kenya.
+      
 				
 			</div>
 		</div>
@@ -126,7 +158,20 @@
 	<script src="http://slidorion.com/js/jquery.easing.js"></script>
     <script src="http://slidorion.com/dist/jquery.slidorion.min.js"></script>
 
+    <!--slidorion query -->
     <script>
+    $(document).ready(function(){
+	$('#slidorion').slidorion({
+		speed: 1000,
+		interval: 4000,
+		effect: 'slideLeft'
+	});
+});
+    </script>
+    
+    
+   <script>
+ function
 	$(function() {
 		$('#slidorion').slidorion({
 			interval: 5000,
