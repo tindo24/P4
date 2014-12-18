@@ -73,7 +73,7 @@
                     <div class="col-lg-12">
                         <h1>Log In</h1>
                         <p> If you dont have an account please signup <a href="/signup">here</a></p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                        
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                         <p></p>
                         <!-- /app/views/login.blade.php -->

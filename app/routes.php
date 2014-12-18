@@ -132,10 +132,10 @@ function(){
 		if($format == 'html') {
 			return View::make('alumni')
 				->with('alumnis', $alumnis)
-				->with('query', $alumnis);
+				->with('query', $query);
 		}
 
-	return View::make('alumni');	
+	#return View::make('alumni');	
 }));
 # register alumni
 

@@ -1,25 +1,29 @@
-## Laravel PHP Framework
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+## Project 4 high school portal
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+I'm building a website for my high school. Here is the link  [Chebosi High school](http://p4.tindoclass.me/).
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+### Project Description
 
-## Official Documentation
+*This is a site for my high school. We have a facebook page but there is need to have a more secure and accesible portal
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+ 
+for the school to track alumnis and also provide a news feed for students and the community
 
-### Contributing To Laravel
+The goal of this project is to have former students and current student keep track of what is happening in the school. 
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
+### Demo Info
 
-### License
+I did a demo during our Wednesday lecture
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+### Tables
+This site has four tables, user, alumni, subject, score. Subject and score are related with a foreign key. 
+
+### Addition
+
+I used bootrap for the interface with a toggle menu to hide and unhide the site. 
+
+I also used Java script in the project. 
+
+

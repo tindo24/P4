@@ -10,7 +10,15 @@
     <meta name="author" content="">
 
     <title>Chebosi High School</title>
+<style>
+	 #content1{
+    margin: 0 auto;
+    width: 94.4%;
+   background-color: #E7DFC9;
+   list-style:none
 
+}
+</style>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -71,6 +79,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
+                    	<div id="content1">
                         <h1>Welcome to Alumni Portal</h1>
            
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
@@ -91,7 +100,10 @@
 	                      {{ Form::close() }}
                         
                      
-                   
+                     
+
+	
+                   </div>
                     </div>
                 </div>
             </div>
