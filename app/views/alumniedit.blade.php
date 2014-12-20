@@ -12,10 +12,10 @@
     <title>Chebosi High School</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://p4.tindoclass.me/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="http://p4.tindoclass.me/css/simple-sidebar.css" rel="stylesheet">
     <style>
     	
     	#content2  {
@@ -109,10 +109,10 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="http://p4.tindoclass.me/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="http://p4.tindoclass.me/js/bootstrap.min.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>

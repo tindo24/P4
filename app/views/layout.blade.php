@@ -142,8 +142,7 @@ h3{
                         		
                         	</div>
                         
-                        	
-                        </p>
+                       
                         </div>
                         
                     </div>
@@ -159,7 +158,7 @@ h3{
 	</div>
 
 	<div id="container" style="text-align:center">
-		<h3></h3>
+		
 	</div>
 
 	<script src="http://slidorion.com/dist/jquery.min.js"></script>
