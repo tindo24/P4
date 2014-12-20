@@ -105,7 +105,7 @@ h3{
                     	<div id="content1">
                     		
                         <h1>Welcome To Chebosi High School</h1>
-                        <p> Keep track of you forme class mates and whats happening curently in chebosi</p>
+                        <p> Keep track of your former class mates and whats happening curently in chebosi</p>
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Hide the  Menu</a>
                       <p>
                       	

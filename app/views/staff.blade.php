@@ -175,9 +175,9 @@ table td {
 <h2 class="demoHeaders">Tabs</h2>
 <div id="tabs">
 	<ul>
-		<li><a href="#tabs-1">First</a></li>
-		<li><a href="#tabs-2">Second</a></li>
-		<li><a href="#tabs-3">Third</a></li>
+		<li><a href="#tabs-1">Principal Info</a></li>
+		<li><a href="#tabs-2">Custodians</a></li>
+		<li><a href="#tabs-3">Administrators</a></li>
 	</ul>
 	<div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 	<div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>

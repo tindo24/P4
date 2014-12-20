@@ -150,7 +150,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>Facilities </h1>
-                        <p> Still under construction !!!!!!</p>
+                        <p> Still under construction, I'm waiting for Data from the School !!!!!!</p>
                        
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                         
@@ -177,29 +177,7 @@
        <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
     <script>
 
-
-
-
-
-
-
 $( "#tabs" ).tabs();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Hover states on the static widgets

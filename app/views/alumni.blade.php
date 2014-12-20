@@ -92,30 +92,17 @@
                         
                         <br/>
                         
-                        <p> Search former students by year</p>
-                        {{ Form::open(array('url' => '/alumni', 'method' => 'POST')) }}
-
-		                {{ Form::label('query','Search') }}
-
-		                   {{ Form::number('query'); }}
-
-		                  {{ Form::submit('Search'); }}
-
-	                      {{ Form::close() }}
+                        <h3> Please help populate and update the Alumnni post. </h3>
                         
-<?php                     
-                     
-foreach ($results as $user)
-{
-    var_dump($user->graduation_year);
-}
-?>
+
 <table style="width:70%">
 	<tr>
     <th>First Name</th>
     <th>Last Name</th>		
     <th>Graduation Year</th>
-     <th>Actions</th>
+     <th>Delete</th>
+     <th>Edit</th>
+     
   </tr>
  
     @foreach($results as $result)

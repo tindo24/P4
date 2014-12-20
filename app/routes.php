@@ -140,6 +140,9 @@ function($id){
   
 
 }));
+
+
+
 # delete alumni
 Route::get('delete/{id}',array('as'=>'deletealumni',
 function($id){
