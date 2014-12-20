@@ -52,15 +52,7 @@
                 <li>
                     <a href="/alumni">Alumnni Portal</a>
                 </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Programs</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+                
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->

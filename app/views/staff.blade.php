@@ -31,18 +31,19 @@
 table td {
        border: thin solid black;
 }
+
+#content2  {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
     </style>
    
-<!-- java script for accordion-->
+<!-- java script for tabs-->
+<link href="css/tabs/jquery-ui.css" rel="stylesheet">
 
-<link rel="stylesheet"
-          href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/hot-sneaks/jquery-ui.css"
-          type="text/css" media="all" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"
-            type="text/javascript"></script>
-    <script
-            src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"
-            type="text/javascript"></script>
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -81,20 +82,20 @@ table td {
                 <li>
                     <a href="/alumni">Alumnni Portal</a>
                 </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Programs</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+                
+            
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
+        <div id='content2'>
+                	 <p><a href="/login">
+                      Login
+                    </a><a href="/logout">
+                      Logout
+                    </a>	</p>
+                	</div>
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
@@ -168,36 +169,41 @@ table td {
   </tr>
 </table>
  <!-- add accordion-->
-    <div id= "accordion">
-
-<script type="text/javascript">
-        $(function() {
-            $( "#accordion" ).accordion();
-        });
-    </script>
-<h2>About Me</h2>
-      <div>
-<p>  I'm a data analyst by profession. My interest are in
-    <li>Business Intelligence</li>
-    <li>Data analytics </li>
-    <li>big data.</li>
-</p>
-    <p>We  just moved to Boston in August. I'm looking into applying for a masters in Information Management in the spring semester. I enjoy playing basketball and Biking.
-    One of my goals is to run the Boston Marathon in the next two years.</p></div>
-<h2>Why I'm taking this course ?</h2>
-    <div><p> I have interest in web programming and web development.
-    I'm hoping to gain a deeper understanding of the MVC framework in relation to PHP </p></div>
-
-
-<h2>Previous Experience with Programming</h2>
-    <div><p>Microsoft VB. <br> Microsoft SQL Server  </p></div>
-
-    <h2>Computer that I'm working on</h2>
-
-    <div> <p>Mac</p></div>
-
+ 
+ 
+<!-- Tabs -->
+<h2 class="demoHeaders">Tabs</h2>
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">First</a></li>
+		<li><a href="#tabs-2">Second</a></li>
+		<li><a href="#tabs-3">Third</a></li>
+	</ul>
+	<div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+	<div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+	<div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
 </div>
-   
+    
+   <script src="js/jquery.js"></script> 
+  <script src="js/jtabs/jquery-ui.min.js"></script>  
+   <script>
+
+
+$( "#tabs" ).tabs();
+
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+
+
   
     </div>          
      
@@ -212,7 +218,7 @@ table td {
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

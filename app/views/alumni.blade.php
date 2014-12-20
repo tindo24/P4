@@ -18,6 +18,11 @@
    list-style:none
 
 }
+#content2  {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
 </style>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -61,20 +66,19 @@
                 <li>
                     <a href="/alumni">Alumnni Portal</a>
                 </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Programs</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+                
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
+         <div id='content2'>
+                	 <p><a href="/login">
+                      Login
+                    </a><a href="/logout">
+                      Logout
+                    </a>	</p>
+                	</div>
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
@@ -99,9 +103,37 @@
 
 	                      {{ Form::close() }}
                         
+<?php                     
                      
-                     
-
+foreach ($results as $user)
+{
+    var_dump($user->graduation_year);
+}
+?>
+<table style="width:70%">
+	<tr>
+    <th>First Name</th>
+    <th>Last Name</th>		
+    <th>Graduation Year</th>
+     <th>Actions</th>
+  </tr>
+ 
+    @foreach($results as $result)
+    <tr>
+    <td>{{$result->firstname}}</td>
+    <td>{{$result->lastname}}</td>		
+    <td>{{$result->graduation_year}}</td>
+     <td>{{HTML::linkRoute('deletealumni','Delete ',array($result->id))}}</td>
+     <td>{{HTML::linkRoute('alumniedit','Edit ',array($result->id))}}</td>
+  </tr>
+    
+       <!-- <li>
+            {{$result->firstname}}
+            {{$result->lastname}}
+            {{$result->graduation_year}}
+       </li>-->
+    @endforeach
+</table>	
 	
                    </div>
                     </div>

@@ -16,6 +16,14 @@
 
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
+    <style>
+    	
+    	#content2  {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -53,20 +61,19 @@
                 <li>
                     <a href="/alumni">Alumnni Portal</a>
                 </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Programs</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+                
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
+        <div id='content2'>
+                	 <p><a href="/login">
+                      Login
+                    </a><a href="/logout">
+                      Logout
+                    </a>	</p>
+                	</div>
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">

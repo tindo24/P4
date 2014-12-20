@@ -25,6 +25,11 @@ Route::get('mysql-test', function() {
 
 });
 
+Route::get('/home', function()
+{
+	return View::make('home');
+});
+
 Route::get('/', function()
 {
 	return View::make('layout');
@@ -107,6 +112,58 @@ Route::post('/login',
 );
 
 
+
+
+# update alumni
+Route::post('edit/{id}',array('as'=>'alumnieditcommit',
+function($id){
+	
+	        $alumni=Alumni::find($id);
+	
+            $alumni->firstname = Input::get('firstname');
+			$alumni->lastname = Input::get('lastname');
+			$alumni->graduation_year= Input::get('graduation_year');
+			$alumni->contact_email = Input::get('contact_email');
+			
+            # add alumni in the alumni table 
+            try {
+                $alumni->save();
+            }
+            # Fail
+            catch (Exception $e) {
+                return Redirect::to('/regalumni')->with('flash_message', 'Registration failed; please try again.')->withInput();
+            }
+
+
+          return Redirect::to('alumni')->with('message', 'Welcome');
+
+  
+
+}));
+# delete alumni
+Route::get('delete/{id}',array('as'=>'deletealumni',
+function($id){
+	
+	$deleted=Alumni::find($id);
+	
+    $deleted->delete();
+	$results = DB::table('alumnis')->get();
+
+    // return View::make('alumni')->with('results', $results);
+	return Redirect::to('alumni')->with('message', 'deleted');
+}));
+
+#edit alumni
+
+Route::get('edit/{id}',array('as'=>'alumniedit',
+function($id){
+	
+	$alumni = Alumni::find($id);
+
+        // show the edit form and pass alumni
+        return View::make('alumniedit')
+            ->with('alumni', $alumni);
+}));
 Route::get('/logout', function()
 {
 	
@@ -118,7 +175,11 @@ Route::get('/alumni', array(
 'before'=>'auth',
 function(){
 	
-	return View::make('alumni');	
+	$results = DB::table('alumnis')->get();
+	
+  return View::make('alumni')->with('results', $results);
+	
+	#return View::make('alumni');	
 }));
 
 Route::post('/alumni', array(
@@ -146,6 +207,8 @@ Route::get('regalumni', function()
 
 # Save alumni info in the database
 
+
+
 Route::post('/regalumni', 
     array(
         'before' => 'csrf', 
@@ -167,7 +230,7 @@ Route::post('/regalumni',
             }
 
 
-            return View::make('/alumni')->with('flash_message', 'Welcome to alumni page!');
+          return Redirect::to('alumni')->with('message', 'Welcome');
 
         }
     )
